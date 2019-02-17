@@ -2,9 +2,10 @@
 export function fetchTopStories() {
   return (dispatch) => {
     dispatch({type: 'LOADING_ARTICLES'});
-    return fetch('http://localhost:3001/api/topStories')
+    return fetch('/api/topStories')
       .then(response => response.json())
       .then(articles => dispatch({type: 'FETCH_TOP_STORIES', payload: articles}))
+    
   }
 }
 
@@ -51,11 +52,11 @@ export function searchArticles(query) {
       return response.json()
     })
     .then(articles =>{
-      console.log('D')
+      
       dispatch({type: 'FETCH_FILTERED_ARTICLES', payload: articles})})
     .catch(error => dispatch({type: 'HANDLE_SEARCH_ERROR', payload: error}))
   }
-  console.log("E")
+  
 }
 
 export function getSearches() {
