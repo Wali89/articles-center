@@ -28,13 +28,8 @@ class QueryContainer extends Component {
   }
 
 
-
-  handleClick() {
-    console.log('Click happened');
-  }
-
   sortByLikes() {
-    console.log('Click happened');
+    
     const sortedSearches =  [...this.state.searches]
     .sort((a, b) => a.likes > b.likes)
     this.setState(function() {
@@ -55,12 +50,6 @@ class QueryContainer extends Component {
 
         </div>
 
-        <div>
-        <button onClick={this.handleClick}>Click Me</button>
-        
-          <Searches searches={this.props.searches} />
-        </div>
-          
         <div>
           <QueryArticles results={this.props.results} numResults={this.props.numResults} searchDone={this.props.searchDone}/> 
         </div>
