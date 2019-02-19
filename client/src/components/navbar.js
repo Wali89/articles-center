@@ -14,7 +14,7 @@ const Navbar = () => {
             <button className="button"><Link to="/" id="TopStories-link" className="item"> Top Stories </Link></button>
             <button className="button"><Link to="/channels"> Browse Channels </Link></button>
             <button className="button"><Link to="/search">Search Articles</Link></button>
-            <h1 id="title" className="title">Article Center</h1>
+            <h1 id="title" className="title">Culture</h1>
           </div>
         </div>
         <div className="ui hidden divider"></div>
