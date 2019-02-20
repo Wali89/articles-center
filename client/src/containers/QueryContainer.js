@@ -11,42 +11,23 @@ import Search from '../components/search';
 
 class QueryContainer extends Component {
   
-  constructor (props) {
-    super(props)
-    
-    this.state = {
-      searches: [],
-      query: props.query,
-      numResults: ''
-
-    }
+  state = {
 
   }
   
   componentDidMount(){
-    this.props.getSearches()
-  }
-
-
-  sortByLikes() {
     
-    const sortedSearches =  [...this.state.searches]
-    .sort((a, b) => a.likes > b.likes)
-    this.setState(function() {
-      return{
-      searches: sortedSearches
-      }
-    })
   }
+
 
 
   render() {
-    
+    const uuidv4 = require('uuid/v4');
     
     return (
       <div className="search">
         <div id="query">
-          <QueryInput searchArticles={this.props.searchArticles} />
+          <QueryInput searchArticles={this.props.searchArticles} key={uuidv4()} />
 
         </div>
 
