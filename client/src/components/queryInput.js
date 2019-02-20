@@ -19,9 +19,7 @@ class QueryInput extends Component {
 
   handleSubmit = event => {
     event.preventDefault()
-    console.log('A')
     this.props.searchArticles(this.state.text)
-    console.log('B')
     this.setState({
       redirect: true
     })  
@@ -37,13 +35,18 @@ class QueryInput extends Component {
     return(
       <div>
         <form onSubmit={this.handleSubmit}>
+
           <h3>Search</h3>
+
           <div>
+
             <input type="text" placeholder="Search" value={this.state.text} onChange={this.handleChange}/>
             <button type="submit">Search</button>
 
           </div>
+
         </form>
+        
       </div>
     )
   }
