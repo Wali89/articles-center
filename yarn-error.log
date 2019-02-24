@@ -1,0 +1,46 @@
+Arguments: 
+  /usr/bin/node /usr/share/yarn/bin/yarn.js add uuid/v4.
+
+PATH: 
+  /home/learn/.rbenv/shims:/home/learn/.rbenv/bin:/home/learn/.rbenv/shims:/home/learn/.rbenv/bin:/home/learn/.rbenv/bin:/usr/local:/usr/local/bin:/usr/local/sbin:/usr/bin:/home/learn/bin:/home/learn/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/learn/.rvm/bin:/home/learn/.rvm/bin:/home/learn/.rvm/bin:/home/learn/.rvm/bin
+
+Yarn version: 
+  1.5.1
+
+Node version: 
+  8.11.1
+
+Platform: 
+  linux ia32
+
+npm manifest: 
+  {
+    "name": "react-and-rails",
+    "engines": {
+      "node": "6.3.1"
+    },
+    "scripts": {
+      "build": "cd client && npm install && npm run build && cd ..",
+      "deploy": "cp -a client/build/. public/",
+      "postinstall": "npm run build && npm run deploy && echo 'Client built!'"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: Found incompatible module
+      at new MessageError (/usr/share/yarn/lib/cli.js:186:110)
+      at Object.checkOne (/usr/share/yarn/lib/cli.js:62444:11)
+      at /usr/share/yarn/lib/cli.js:22773:75
+      at Generator.next (<anonymous>)
+      at step (/usr/share/yarn/lib/cli.js:98:30)
+      at /usr/share/yarn/lib/cli.js:116:14
+      at new Promise (<anonymous>)
+      at new F (/usr/share/yarn/lib/cli.js:23451:28)
+      at /usr/share/yarn/lib/cli.js:95:12
+      at /usr/share/yarn/lib/cli.js:22777:27
