@@ -26,3 +26,5 @@ class LoginContainer extends Component {
     {form}
   )
 }
+
+export default connect(null,{loginUser, signUpUser})(LoginContainer)
