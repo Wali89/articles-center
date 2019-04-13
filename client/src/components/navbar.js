@@ -4,6 +4,7 @@ import TopStoriesContainer from '../containers/TopStoriesContainer';
 import ChannelsContainer from '../containers/ChannelsContainer';
 import ChannelArticlesContainer from '../containers/ChannelArticlesContainer';
 import QueryContainer from '../containers/QueryContainer';
+import LogInContainer from '../containers/LogInContainer';
 
 const Navbar = () => {
   return(
@@ -15,6 +16,8 @@ const Navbar = () => {
             <button className="button"><Link to="/channels"> Browse Channels </Link></button>
 
             <button className="button"><Link to="/search">Search Articles</Link></button>
+
+            <button className="button"><Link to="/login">Log In</Link></button>
 
             <h1 id="title" className="title">Articles Center</h1>
 
@@ -32,6 +35,8 @@ const Navbar = () => {
         <Route exact path="/search" component={QueryContainer} />
 
         <Route exact path="/search/:query" component={QueryContainer} />
+
+        <Route exact path="/login" component={LogInContainer} />
 
     </div>
     </Router>
