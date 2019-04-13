@@ -15,6 +15,26 @@ class LoginForm extends Component {
     event.preventDefault();
     this.props.handleSubmit(this.state);
   }
+
+  render() {
+    return(
+      <UserForm>
+      <h1>Articles Center Login</h1>
+
+      <form onSubmit={ event => this.handleLogin(event)}>
+
+      <UserInput type="text" name="email" onChange={ event => this.handleChange(event) } placeholder="User Email"/>
+      
+      <UserInput type="password" name="password" onChange={ event => this.handleChange(event) } placeholder="Password"/>
+
+      <UserButton type="submit" >Login</UserButton>
+
+
+      </form>
+      
+      </UserForm>
+    );
+  }
   
 
 }
