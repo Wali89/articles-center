@@ -20,11 +20,13 @@ class LoginContainer extends Component {
     let form = this.state.newUser ?
     <SignUpForm handleSwitchForm={this.handleSwitchForm} handleSubmit={this.props.signUpUser}/>
     : <LoginForm handleSwitchForm={this.handleSwitchForm} handleSubmit={this.props.loginUser}/>
+    return (
+      
+      {form}
+    )
   }
 
-  return (
-    {form}
-  )
+
 }
 
 export default connect(null,{loginUser, signUpUser})(LoginContainer)

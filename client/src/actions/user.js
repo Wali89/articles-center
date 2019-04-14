@@ -41,3 +41,35 @@ export function loginUser(credentials) {
           });             
   };
 }
+
+
+export function signUpUser(credentials,history) {
+    return (dspatch) => {
+        dispatch(setUserMessage("Signing up..."));
+
+        const email = credentials.email;
+        const password = credentials.password;
+
+        const request = {user: {"email": email, "pasword": password}}
+
+        const options = {
+            method: 'POST',
+            body: JSON.stringify(request),
+            headers: {
+                'Content-Type': 'application/json'
+            }
+
+        };
+
+        fetch("api/users", options)
+            .then(res => handleAPIErrors(res))
+            .then(res => res.json())
+            .then(res => {
+                dispatch(loginUser(credtials))
+            })
+            .catch(function(error){
+                console.log("Signup Error", error);
+                dispatch(setUserMessage(`Sign Up ${error}`));
+            });
+    };
+}
