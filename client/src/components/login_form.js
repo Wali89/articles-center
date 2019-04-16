@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import {UserForm, UserInput, UserButton, UserLink, SubText} from 'components/user_form_style.js';
+
 class LoginForm extends Component {
 
   state = {
