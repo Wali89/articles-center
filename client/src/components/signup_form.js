@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import StatusMessage from 'containers/status_message';
-import {UserForm, UserInput, UserButton, UserLink, SubText} from 'components/user_form_style.js';
+import {UserForm, UserInput, UserButton, UserLink, SubText} from './user_form.js';
 
 
 class SignUpForm extends Component {
