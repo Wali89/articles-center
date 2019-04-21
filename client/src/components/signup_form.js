@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import StatusMessage from 'containers/status_message';
+import StatusMessage from '../containers/status_message';
 import {UserForm, UserInput, UserButton, UserLink, SubText} from './user_form.js';
 
 
