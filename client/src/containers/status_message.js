@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import styled from 'styled-components';
 
-export const UserMessage = style.div`
+export const UserMessage = styled.div` 
   color:red;
   font-size: 1.5em;
 `;

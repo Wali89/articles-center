@@ -9,6 +9,8 @@
     "postinstall": "npm run build && npm run deploy && echo 'Client built!'"
   },
   "dependencies": {
+    "@types/jwt-decode": "^2.2.1",
+    "jwt-decode": "^2.2.0",
     "uuid": "^3.3.2"
   }
 }
