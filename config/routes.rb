@@ -11,6 +11,12 @@ Rails.application.routes.draw do
     post'/articles_search', to: 'articles#articles_search'
     get '/searches', to: 'search#last_ten'
     post '/searches/:id', to: 'search#update'
+    get '/users/:id' => 'users#show'
+    patch '/users/:id' => 'users#update'
+    post '/users' => 'users#create'
+    
+    post 'user_token' => 'user_token#create'
+    post 'invalidate_token' => 'user_token#invalidate'
     get '*path', to: "application#fallback_index_html", constraints: ->(request) do
   !request.xhr? && request.format.html?
     end
