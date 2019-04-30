@@ -17,7 +17,7 @@ const Navbar = () => {
 
             <button className="button"><Link to="/search">Search Articles</Link></button>
 
-            <button className="button"><Link to="/login">Log In</Link></button>
+            <button className="button"><Link to="/users">Log In</Link></button>
 
             <h1 id="title" className="title">Articles Center</h1>
 
@@ -36,7 +36,7 @@ const Navbar = () => {
 
         <Route exact path="/search/:query" component={QueryContainer} />
 
-        <Route exact path="/login" component={LogInContainer} />
+        <Route exact path="/users" component={LogInContainer} />
 
     </div>
     </Router>
