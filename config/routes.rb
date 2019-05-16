@@ -14,10 +14,10 @@ Rails.application.routes.draw do
     get '/users/:id' => 'users#show'
     patch '/users/:id' => 'users#update'
     post '/users' => 'users#create'
-    
+    root :to => 'index#index'
     post 'user_token' => 'user_token#create'
-    post 'invalidate_token' => 'user_token#invalidate'
-    get '*path', to: "application#fallback_index_html", constraints: ->(request) do
+    post 'invalidate_token' => 'user_token#invalidate',
+    constraints: ->(request) do
   !request.xhr? && request.format.html?
     end
   end

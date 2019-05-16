@@ -17,12 +17,11 @@ class LoginContainer extends Component {
   }
 
   render() {
-    let form = this.state.newUser ?
-    <SignUpForm handleSwitchForm={this.handleSwitchForm} handleSubmit={this.props.signUpUser}/>
-    : <LoginForm handleSwitchForm={this.handleSwitchForm} handleSubmit={this.props.loginUser}/>
+
     return (
       
-      {form}
+      <SignUpForm handleSwitchForm={this.handleSwitchForm} handleSubmit={this.props.signUpUser}/>
+       <LoginForm handleSwitchForm={this.handleSwitchForm} handleSubmit={this.props.loginUser}/>
     )
   }
 
