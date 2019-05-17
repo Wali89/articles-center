@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-
-import StatusMessage from '../containers/status_message';
 import {UserForm, UserInput, UserButton, UserLink, SubText} from './user_form.js';
 
 
@@ -23,8 +21,7 @@ class SignUpForm extends Component {
     render() {
         return (
             <UserForm>
-                <h1>news4u sign up</h1>
-                <StatusMessage />                
+                <h1>Articles Center Sign Up</h1>              
                 <form onSubmit={ event => this.handleSignUp(event) }>
                     <UserInput type="text" name="email" onChange={ event => this.handleChange(event) } placeholder="User Email" />
                     <UserInput type="password" name="password" onChange={ event => this.handleChange(event) } placeholder="Password" />

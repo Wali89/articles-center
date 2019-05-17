@@ -12,16 +12,14 @@ class LoginContainer extends Component {
     newUser: false
   }
 
-  handleSwitchForm =  () => {
-    this.setState((prevState) => ({newUser: !prevState.newUser}));
-  }
 
   render() {
 
     return (
-      
-      <SignUpForm handleSwitchForm={this.handleSwitchForm} handleSubmit={this.props.signUpUser}/>
-       <LoginForm handleSwitchForm={this.handleSwitchForm} handleSubmit={this.props.loginUser}/>
+      <div>
+      <SignUpForm handleSubmit={this.props.signUpUser}/>
+      <LoginForm handleSubmit={this.props.loginUser}/>
+      </div>
     )
   }
 
