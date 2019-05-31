@@ -24,7 +24,7 @@ ActiveRecord::Schema.define(version: 2019_05_28_011342) do
 
   create_table "user_news_sources", force: :cascade do |t|
     t.integer "user_id"
-    t.string "news_source_id"
+    t.integer "news_source_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
