@@ -41,7 +41,8 @@
   border: 4px solid #373737;
   padding: 20px;
   background-image: url("banner.jpg");
-
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .ui-tabular-stackable-menu {
