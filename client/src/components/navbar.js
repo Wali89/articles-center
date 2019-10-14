@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import TopStoriesContainer from '../containers/TopStoriesContainer';
 import ChannelsContainer from '../containers/ChannelsContainer';
@@ -6,8 +6,11 @@ import ChannelArticlesContainer from '../containers/ChannelArticlesContainer';
 import QueryContainer from '../containers/QueryContainer';
 import LogInContainer from '../containers/LogInContainer';
 
-const Navbar = () => {
+
+class Navbar extends Component {
+  render() {
   return(
+    
     <Router>
       <div>
         <div className="App-navbar">
@@ -17,7 +20,7 @@ const Navbar = () => {
 
             <button className="button"><Link to="/search">Search Articles</Link></button>
 
-            <button className="button"><Link to="/users">Log In</Link></button>
+           {/* <button className="button"><Link to="/users">Log In</Link></button> */}
 
             <h1 id="title" className="title">Articles Center</h1>
 
@@ -39,8 +42,11 @@ const Navbar = () => {
         <Route exact path="/users" component={LogInContainer} />
 
     </div>
+
     </Router>
+    
   )
+  }
 }
 
 export default Navbar;

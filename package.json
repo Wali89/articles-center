@@ -11,6 +11,9 @@
   "dependencies": {
     "@types/jwt-decode": "^2.2.1",
     "jwt-decode": "^2.2.0",
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2",
+    "react-sticky": "^6.0.3",
     "styled-components": "^4.2.0",
     "uuid": "^3.3.2"
   }

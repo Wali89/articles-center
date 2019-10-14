@@ -36,11 +36,11 @@
   border-style: outset;
   text-decoration-color: #C0B283;
   color: #0e1219;
-  text-shadow: 2px 2px 4px #373737;
+  /*text-shadow: 2px 2px 4px #373737;*/
   border-radius: 21px;
   border: 4px solid #373737;
   padding: 20px;
-  background-image: url("banner.jpg");
+  /*background-image: url("banner.jpg");*/
   background-repeat: no-repeat;
   background-size: cover;
 }
