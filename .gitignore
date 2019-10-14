@@ -27,3 +27,4 @@
 /config/master.key
 /config/local_env.yml.env
 /public
+/client/node_modules
