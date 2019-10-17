@@ -20,7 +20,7 @@ class Navbar extends Component {
 
             <button className="button"><Link to="/search">Search Articles</Link></button>
 
-           {/* <button className="button"><Link to="/users">Log In</Link></button> */}
+           <button className="button"><Link to="/users">Log In</Link></button> 
 
             <h1 id="title" className="title">Articles Center</h1>
 
