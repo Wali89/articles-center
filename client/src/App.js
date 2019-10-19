@@ -1,20 +1,32 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import LoginContainer from './components/navbar';
 import Navbar from './components/navbar';
-import { StickyContainer, Sticky } from 'react-sticky';
 
 class App extends Component {
   render() {
-    return (
+
+    if(this.props.userLoggedIn)
+      return (
+        <Navbar/>
+      )
+
+    else return (
 
 
       <div className="App">
-        < Navbar />
+        <LoginContainer/>
       </div>
 
     );
   }
 }
 
+const mapStateToProps = state => {
+  return {
+    userLoggedIn: state.user.isLoggedIn
+  }
+
+} 
 export default App;
