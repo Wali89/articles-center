@@ -16,7 +16,7 @@ export function fetchChannels() {
     dispatch({type: 'LOADING_ARTICLES'});
     return fetch('/api/channels')
       .then(response => response.json())
-      .then(articles => dispatch({type: 'FETCH_CHANNELS', payload: articles}))
+      .then(sources => dispatch({type: 'FETCH_CHANNELS', payload: sources}))
   }
 }
 

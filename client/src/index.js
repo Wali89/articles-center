@@ -11,12 +11,12 @@ import NavBar from './containers/NavBar';
 ReactDOM.render(
   <Root>
     <Router>
-      <React.Freagment>
+      <React.Fragment>
         <NavBar/>
         <Route exact path="/" component={App} />
         <Route exact path='/search' component={QueryContainer} /> 
 
-      </React.Freagment>
+      </React.Fragment>
 
     </Router>
 

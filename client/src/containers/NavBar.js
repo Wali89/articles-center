@@ -7,7 +7,7 @@ import QueryContainer from './QueryContainer';
 import LogInContainer from './LogInContainer';
 
 
-class Navbar extends Component {
+class NavBar extends Component {
   render() {
   return(
     
@@ -49,4 +49,4 @@ class Navbar extends Component {
   }
 }
 
-export default Navbar;
+export default NavBar;

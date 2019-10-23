@@ -6,7 +6,6 @@ import { connect } from 'react-redux';
 import { searchArticles } from '../actions/articleActions';
 import { getSearches } from '../actions/articleActions';
 import { debug } from 'util';
-import Search from '../components/search';
 
 
 class QueryContainer extends Component {
