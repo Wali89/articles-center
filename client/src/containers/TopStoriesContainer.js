@@ -25,7 +25,7 @@ class TopStoriesContainer extends Component {
 }
 
 const mapStateToProps = (state) => {
-  return {topStories: state.topStories}
+  return {topStories: state.news.topStories}
 }
 
 const mapDispatchToProps = dispatch => {

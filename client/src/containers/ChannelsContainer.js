@@ -20,7 +20,7 @@ class ChannelsContainer extends Component {
 
 
 const mapStateToProps = state => {
-  return {channels: state.news.articles}
+  return {channels: state.news.channels}
 }
 
 

@@ -20,7 +20,7 @@ class Channels extends Component {
 
 const mapStateToProps = state => {
   return {
-    channels : state.channels,
+    channels : state.news.channels,
   }
 }
 
