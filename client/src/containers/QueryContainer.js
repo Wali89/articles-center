@@ -42,11 +42,11 @@ class QueryContainer extends Component {
 
 const mapStateToProps = state => {
   return{
-    results: state.results,
-    query: state.query,
-    numResults: state.numResults,
-    searchDone: state.searchDone,
-    searches: state.searches
+    results: state.news.results,
+    query: state.news.query,
+    numResults: state.news.numResults,
+    searchDone: state.news.searchDone,
+    searches: state.news.searches
   }
 }
 
