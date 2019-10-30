@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import { Redirect } from 'react-router-dom';
 import logo from './logo.svg';
 import './App.css';
 import LoginContainer from './containers/LogInContainer';
 import NavBar from './containers/NavBar';
+
 
 class App extends Component {
   render() {
@@ -29,4 +32,4 @@ const mapStateToProps = state => {
   }
 
 } 
-export default App;
+export default connect(mapStateToProps)(App);

@@ -20,6 +20,15 @@ export function fetchChannels() {
   }
 }
 
+export function getNewsSources() {
+  return (dispatch) => {
+    dispatch({type: 'LOADING_ARTICLES'});
+    return fetch('/api/channels')
+      .then(response => response.json())
+      .then(sources => dispatch({type: 'FETCH_CHANNELS', payload: sources}))
+  }
+}
+
 
 //Gets the articles for specified channel
 export function searchChannelArticles(channel) {
