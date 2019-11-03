@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import QueryInput from '../components/queryInput';
-import QueryArticles from '../components/queryArticles';
+import QueryInput from '../components/query_input';
+import QueryArticles from '../components/query_articles';
 import Searches from '../components/searches';
 import { connect } from 'react-redux';
 import { searchArticles } from '../actions/articleActions';

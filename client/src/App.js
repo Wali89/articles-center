@@ -3,8 +3,8 @@ import { connect } from 'react-redux';
 import { Redirect } from 'react-router-dom';
 import logo from './logo.svg';
 import './App.css';
-import LoginContainer from './containers/LogInContainer';
-import NavBar from './containers/NavBar';
+import LoginContainer from './containers/log_in';
+import NavBar from './containers/nav_bar';
 
 
 class App extends Component {

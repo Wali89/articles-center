@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-import TopStoriesContainer from './TopStoriesContainer';
-import ChannelsContainer from './ChannelsContainer';
-import ChannelArticlesContainer from './ChannelArticlesContainer';
-import QueryContainer from './QueryContainer';
-import LogInContainer from './LogInContainer';
+import TopStoriesContainer from './top_stories';
+import ChannelsContainer from './channels';
+import ChannelArticlesContainer from './channel_articles';
+import QueryContainer from './query';
+import LogInContainer from './log_in';
 
 
 class NavBar extends Component {

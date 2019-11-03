@@ -4,8 +4,8 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 import Root from './Root';
 import App from './App';
-import QueryContainer from './containers/QueryContainer';
-import NavBar from './containers/NavBar';
+import QueryContainer from './containers/query';
+import NavBar from './containers/nav_bar';
 
 
 ReactDOM.render(
