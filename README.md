@@ -6,6 +6,7 @@ Article Center is an application that provides you with popular articles from va
 -Browse Channels: Displays the different sources and allows you to see articles from specified source.
 -Search Articles: Takes a keyword and returns articles related to said keyword.
 
+Live Demo: https://articles-center.herokuapp.com/
 
 ## Installation
 Clone: 
